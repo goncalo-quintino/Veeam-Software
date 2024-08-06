@@ -30,7 +30,7 @@ def sync_folder(source_path, replica_path, log_file_path, log_name):
             remove_folder(replica_path, folder)
             message = "Folder removed:"
             write_log(log_file_path, log_name, folder, message)
-    
+
     folder_names = get_folders(source_path)
     for folder in folder_names:
         if os.path.exists(get_path(replica_path, folder)) == False:
@@ -109,7 +109,7 @@ def create_folder(path, folder_name):
 
 
 def remove_folder(path, folder_name):
-    shutil.rmtree(get_path(path, folder_name)) 
+    shutil.rmtree(get_path(path, folder_name))
 
 
 def copy_file(source_path, replica_path, file_name):
