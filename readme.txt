@@ -1,8 +1,8 @@
 The program gets argumets from the command line. It gets:
-- source path The folder with the content that should be replicated
-- replica path The folder where the content should be replicated to
-- sync time Time in seconds between each update of replica
-- log file path Path where log file will be created
+- source path: The folder with the content that should be replicated
+- replica path: The folder where the content should be replicated to
+- sync time: Time in seconds between each update of replica
+- log file path: Path where log file will be created
 
 The implementation works in the following manner:
 - Looks for folders in replica that don't exist in source and deletes them.
